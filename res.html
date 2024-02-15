@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image" href="./img/P.webp">
+    <title>PetPooja</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- navbar start -->
+    <div class="position-relative " style="margin-bottom: 13%;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top w-100 shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger me-5" href="#"><img src="./img/logo.svg" alt="logo" height="130"
+                        width="130" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+
+
+                <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-dark mx-1  fs-5" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                POS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="billing.html" target="_self">Billing</a></li>
+                                <li><a class="dropdown-item" href="#">Inventory</a></li>
+                                <li><a class="dropdown-item" href="#">Online Ordering</a></li>
+                                <li><a class="dropdown-item" href="#">Reporting</a></li>
+                                <li><a class="dropdown-item" href="#">Menu</a></li>
+                                <li><a class="dropdown-item" href="#">CRM</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark mx-1 fs-5 " href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ADD-Ons
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                                <li><a class="dropdown-item" href="#">Payroll</a></li>
+                                <li><a class="dropdown-item" href="#">Marketing Hub</a></li>
+                                <li><a class="dropdown-item" href="#">Suppliers Hub</a></li>
+                                <li><a class="dropdown-item" href="#">Intergration</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark  fs-5" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Outlet Types
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <div class="d-flex">
+                                    <div class="div">
+                                        <li><a class="dropdown-item text-end" href="#">Fine dine</a></li>
+                                        <li><a class="dropdown-item" href="#">QSR</a></li>
+                                        <li><a class="dropdown-item" href="#">Cafe</a></li>
+                                        <li><a class="dropdown-item" href="#">Food Court</a></li>
+                                        <li><a class="dropdown-item" href="#">cloud Kitchen</a></li>
+                                    </div>
+                                    <div class="div">
+                                        <li><a class="dropdown-item" href="#">Ice cream & Desserts</a></li>
+                                        <li><a class="dropdown-item" href="#">Bakery</a></li>
+                                        <li><a class="dropdown-item" href="#">Bar & Brawery</a></li>
+                                        <li><a class="dropdown-item" href="#">Pizzeria</a></li>
+                                        <li><a class="dropdown-item" href="#">Large Chain</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+
+                        <li><a class="nav-link text-dark mx-1  fs-5" href="#">Price</a></li>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark fs-5 me-3" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                <li><a class="dropdown-item" href="#">YouTube</a></li>
+                                <li><a class="dropdown-item" href="#">Webinars</a></li>
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Careers</a></li>
+                                <li><a class="dropdown-item" href="#">Support</a></li>
+                            </ul>
+                        </li>
+                        <br>
+                        <div class="div">
+                            <p class=" d-lg-none d-xl-none  d-md-block">Get in touch with our team to clearify your
+                                Queries
+                            </p>
+                            <hr class=" d-lg-none d-xl-none  d-md-block">
+                            <button class="btn btn-outline-danger fs-4 ">Book a free demo</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- navbar end -->
+    <!-- head start -->
+    <div class="head container mt-5">
+        <div class="row bg-dark p-4 text-center  ">
+            <div class=" col-lg-4 col-md-4 col-sm-4">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-light">
+                <h2>ATTENDANCE AND PAYROLL RELEATED WORRIES END HERE </h2>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 mt-5 ">
+                <Button type="button" class="btn rounded btn-lg text-dark"
+                    style="background-color:#90ee90;">KnowMore</Button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- head end -->
+    <!-- sectionOne start -->
+    <div class="content container ">
+        <div class="row my-4  para">
+            <div class="col-lg-6 col-md-12 col-sm-12  ">
+                <h1 class=" my-4" style="font-size: 50px;">Restaurant POS Software Made Simple</h1>
+                <p class="text-wrap mb-5 fs-5">Manages all your restaurant operations <br> efficiently so that you can
+                    focus on growing <br> your brand, like a real boos!</p>
+                <button type="button" class="btn bg-danger text-light fs-4 "> Take a Free Demo</button>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center  ">
+                <img src="./img/chef.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- SectionOne end -->
+
+    <!-- Sectiontwo Start -->
+
+    <div class="container">
+        <h1 class="text-center mb-5">Trusted by 55,000+ restaurant</h1>
+
+        <div class="row align-items-center ">
+            <div class="col-lg-2 col-md-4 col-sm-6  p-3 text-center ">
+                <img src="./img/pizza.jpg" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Pizza ">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 p-3 text-center">
+                <img src="./img/star.jpg" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title=" StarBriyani">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6  p-3 text-center"><img src="./img/jk.jpg" alt="" class="img-fluid "
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Jumbook">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6   p-3 text-center"><img src="./img/hucco.jpg" alt=""
+                    class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hocco "></div>
+            <div class="col-lg-2 col-md-4  col-sm-6 p-3 text-center"><img src="./img/yum.jpg" alt="" class="img-fluid"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" title=" YumYum"></div>
+            <div class="col-lg-2 col-md-4 col-sm-6    p-3 text-center"><img src="./img/friday.jpg" alt=""
+                    class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Fridays"></div>
+
+            <div class="row  align-items-center my-5">
+                <div class="col-lg-2 col-md-4 col-sm-6  p-3 text-center"><img src="./img/gianis.jpg" alt=""
+                        class="img-fluid " data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Gianis"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6  p-3 text-center"><img src="./img/yang.jpg" alt=""
+                        class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Yangkiez"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6  p-3 text-center"><img src="./img/khab.jpg" alt=""
+                        class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Kabhib"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6  p-3 text-center"><img src="./img/apsara.jpg" alt=""
+                        class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Apsara"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6  p-3 text-center"><img src="./img/bercose.jpg" alt=""
+                        class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Bercos "></div>
+                <div class="col-lg-2 col-md-4 col-sm-6  p-3 text-center"><img src="./img/kailash.jpg" alt=""
+                        class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Kailash"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- SectionTwo end -->
+
+    <!-- SectionThree Start-->
+    <div class="container pt-5">
+        <h4 class="mb-3 text-danger">SMART POS FEATURES</h4>
+        <h2 class="mb-3">A restaurent POS made for all your needs</h2>
+        <p class="mb-5 fs-5">A quick and easy-to-use restaurent billing software that makes managing high order
+            volumes
+            butter smooth.</p>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12 col-sm-12 p-3">
+                <img src="./img/billing-software.webp" alt=" " class="img-fluid" width="600">
+            </div>
+            <div class="col-lg-4  col-md-12 col-sm-12 p-3 my-4  fs-4 ">
+                <h2 class="mb-4">A quick 3-click restaurent <span class="text-danger">Billing</span> software</h2>
+                <p class="mb-4 text-wrap">Take orders, punch bills and generate KOT. Accept payments either by
+                    splitting
+                    bill or merging tables. Easily apply discounts and coupons. All of this, and more, is easy and
+                    quick
+                    with Petpooja's restaurant POS</p>
+                <h4 class="mb-4">Explore all Features</h4>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="row p-4 align-items-center justify-content-between">
+            <div class="col-lg-5 col-md-12 col-sm-12  fs-4  pe-4">
+                <h2 class="mb-4">Restaurant <span class="text-danger">Inventory</span> management made easier</h2>
+                <p class="mb-4 text-wrap">Do inventory management the smart way. Put your inventory on the item-wise
+                    auto deduction, get low-stock alters, day-end inventory reports and more with Petpooja
+                    restaurant POS</p>
+                <h4 class="mb-4">Explore all Features</h4>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 text-center ps-5 ">
+                <img src="./img/Inventory-Management.webp" alt=" " class="img-fluid" width="600">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row p-4 align-items-center">
+            <div class="col-lg-7 col-md-12 col-sm-12  ">
+                <img src="./img/Real-Time-Reporting.webp" alt=" " class="img-fluid" width="600">
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 mt-4 p-4 fs-4 ">
+                <h2 class="mb-4">Get real-time restaurant <span class="text-danger">Reports </span></h2>
+                <p class="mb-4 text-wrap">Automate your restaurant reports and go paper free! Let Petpooja POS
+                    automatically track your business activities and provide you error free reports on your
+                    restaurant’s
+                    day-end sales, online orders, staff actions, inventory consumption, and various 80+ essential
+                    business reports</p>
+                <h4 class="mb-4">Explore all Features</h4>
+            </div>
+        </div>
+        <br><br>
+        <div class="row p-4 align-items-center ">
+            <div class="col-lg-5 col-md-12 col-sm-12 mt-4  fs-4 ">
+                <h2 class="mb-4">A single <span class="text-danger">Online Ordering System </span>to manage all your
+                    orders</h2>
+                <p class="mb-4 text-wrap">
+                    Accept online orders, manage online menu, mark food ready, collect payment and check revenue
+                    without
+                    shuffling between multiple screens
+                </p>
+                <h4 class="mb-4">Explore all Features</h4>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 text-end ">
+                <img src="./img/Online-Order-System.webp" alt=" " class="img-fluid" width="600">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SectionThree end -->
+    <!-- SectionForth start crm -->
+
+    <div class="container-fluid" style="background-color: #fef2f2;">
+        <div class="container " style="padding-top: 100px;">
+            <p>APP MARKETPLACE</p>
+            <h1 class="mb-5">Add-ons to supercharge your Restaurant POS</h1>
+            <div class="row align-items-center my-5 py-5">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="border-start border-4 px-4  border-danger ">
+                        <h1 class="text-danger">CRM</h1>
+                        <p>Bill payment is not the end of the service. That's why we’ve built smart CRM tools that
+                            help
+                            you know
+                            your customers well and deliver the best to win their trust and loyalty</p>
+
+                        <h3 class="fs-5 mb-4">Learn More</h3>
+                    </div>
+
+                    <div class="border-start border-4 py-3 mb-2">
+                        <h4 class=" ms-4 "> Analytics</h4>
+                    </div>
+                    <div class="border-start border-4 py-3 mb-2">
+                        <h4 class="ms-4 "> Customers Service</h4>
+                    </div>
+                    <div class="border-start border-4 py-3 mb-2">
+                        <h4 class="ms-4"> Operations</h4>
+                    </div>
+
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12 text-end mt-4">
+                    <img src="./img/CRM_lg.webp" alt="" class="img-fluid" width="550">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sectionforth end crm-->
+
+    <!-- sectionfive single dashbored start -->
+    <div class="container">
+        <div class="row p-4 align-items-center ">
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-4  fs-4 ">
+                <h4 class="mb-3 fw-light">INTEGRATIONS</h4>
+                <h2 class="mb-3">Multiple integrations - single dashboard</h2>
+                <p class="mb-5 text-wrap fw-light">
+                    Manage 150+ third-party integrations and services directly from Petpooja POS
+                </p>
+                <button type="button" class="btn btn-lg bg-danger"><a href="#"
+                        class="text-decoration-none text-light">See all intergration</a></button>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-end mt-4  mb-4 ">
+                <img src="./img/Multiple-integrations.webp" alt=" " class="img-fluid" width="600">
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row mb-4 ">
+                <div class="col">
+                    <img src="./img/multiple_integration_dsktp.webp" alt="multiple intergration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sectionfive single dashbored end -->
+
+    <!-- sectionsix  all foods start -->
+    <div class="container-fluid mt-3">
+        <div class="row bg-danger text-light text-center" style="padding: 0 0 6% 0 ;">
+            <h6 style="padding-top: 70px;" class="fw-5">OUTLET TYPES</h6>
+            <h2>Built for all types of food business</h2>
+            <p class="mb-5">The all-in-one Restaurant Management System for all types of restaurant formats and food
+                outlets</p>
+            <div class="row row-cols-2 row-cols-lg-5  g-2 g-lg-2" style="background-color: rgb(172, 4, 4);">
+                <div class="col shadow-lg p-3 rounded">
+                    <a href="#"><img src="./img/food.webp" alt="" class="container-fluid img-fluid"></a>
+                    <h3>Food Courts & Canteens</h3>
+                </div>
+                <div class="col shadow-lg p-3 rounded">
+                    <div class="p-3"> <a href="#"><img src="./img/cafe.webp" alt="" class="img-fluid"></a>
+                        <h3>Cafe</h3>
+                    </div>
+                </div>
+                <div class="col shadow-lg p-3 rounded ">
+                    <div class="p-3 "> <a href="#"><img src="./img/dine.webp" alt="" class="img-fluid"></a>
+                        <h3>Fine Dine</h3>
+                    </div>
+                </div>
+                <div class="col shadow-lg p-3 rounded">
+                    <div class="p-3 "> <a href="#"><img src="./img/bar.webp" alt="" class="img-fluid"></a>
+                        <h3>Bar & Brewery</h3>
+                    </div>
+                </div>
+                <div class="col shadow-lg p-3 rounded">
+                    <div class="p-3 "> <a href="#"><img src="./img/Pizza.webp" alt="" class="img-fluid"></a>
+                        <h3>Pizzeria</h3>
+                    </div>
+                </div>
+                <div class="col shadow-lg p-3 rounded">
+                    <div class="p-3 "> <a href="#"><img src="./img/QSR.webp" alt="" class="img-fluid"></a>
+                        <h3>QSR</h3>
+                    </div>
+                </div>
+                <div class="col shadow-lg p-3 rounded">
+                    <div class="p-3"> <a href="#"><img src="./img/desarts.webp" alt="" class="img-fluid"></a>
+                        <h3>Desserts</h3>
+                    </div>
+                </div>
+                <div class="col shadow-lg p-3 rounded">
+                    <div class="p-3"> <a href="#"><img src="./img/largechains.webp" alt="" class="img-fluid"></a>
+                        <h3>Large Chains</h3>
+                    </div>
+                </div>
+                <div class="col shadow-lg p-3 rounded">
+                    <div class="p-3 "> <a href="#"><img src="./img/bakery.webp" alt="" class="img-fluid"></a>
+                        <h3>Bakery</h3>
+                    </div>
+                </div>
+                <div class="col shadow-lg p-3 rounded">
+                    <div class="p-3 "> <a href="#"><img src="./img/cloudkitchen.webp" alt="" class="img-fluid"></a>
+                        <h3>Cloud Kitchens</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sectionsix  all foods end -->
+
+    <!-- sectionseven  carosal start -->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active"
+                    aria-current="true" aria-label="Slide"></button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-inner p-5  my-4 mb-5">
+                <div class="carousel-item active ">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-11 col-sm-12">
+                            <img src="./img/Somesh_Jha_Hocco.webp" class="d-block w-100 rounded-3" alt="..."
+                                class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-11 col-sm-12 ps-5">
+                            <p class="fs-5 text-wrap mb-5 ms-4 fw-light pt-5">
+                                “Thank god we had Petpooja with us during the Covid-19 lockdown. We wouldnt have
+                                been
+                                able to offer delivery or online services with our old POS system. What really sets
+                                Petpooja aside is its direct integration with different third-party aggregators like
+                                Zomato, Swiggy, etc. Because of this, we were able to take huge volumes of orders
+                                and
+                                serve more customers. Petpooja helped us transition from regular business to home
+                                delivery.” </p>
+                            <h4 class="mt-2 ms-4">Somash Jha,</h4>
+                            <h4 class="ms-4">General IT Manager at HRPL</h4>
+                            <img src="./img/hucco.jpg" alt="" class="ms-4 ">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <img src="./img/kiran_apsara-ice-cream_md.webp" class="d-block w-100 rounded-3" alt="..."
+                                class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 ps-5  ">
+
+                            <p class="fs-5 text-wrap mb-5 ms-4 fw-light pt-5">” The decision to switch to Petpooja from our
+                                existing
+                                POS has been one of
+                                the most
+                                impactful ones I
+                                have made at Apsara Ice Creams. We have a network of more than 100 outlets pan
+                                India,
+                                and I wanted a
+                                one-stop solution for our retail sales management. Petpooja has almost everything
+                                under
+                                the sun
+                                regarding features, and its support team is super responsive.”</p>
+                            <h4 class="mt-1 ms-4">Kiran Shah,</h4>
+                            <h4 class="ms-4">Managing Director</h4>
+                            <img src="./img/Go_zero.webp" alt="" class="ms-4 ">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sectionseven  carosal start -->
+
+    <div class="container a ">
+        <div class="row align-items-center " style="padding: 8%  0 15% 0%;">
+            <div class="col-lg-4 col-md-12 col-sm-12  d-flex j mb-4">
+                <img src="./img/Happy-customers.webp" alt="" class="img-fluid " width="100">
+                <div class="">
+                    <h3 class="text-danger ms-5">55K</h3>
+                    <p class="ms-5 fs-4">Happy Customers</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 d-flex  text-wrap j mb-4">
+                <img src="./img/Bills-processed-everyday.webp" alt="" class="img-fluid " width="100">
+                <div class="">
+                    <h3 class="text-danger ms-5">40L</h3>
+                    <p class="ms-5 fs-4 ">Bills processed everyday</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12  d-flex  j mb-4 ">
+                <img src="./img/Processing-errors.webp" alt="" class="img-fluid " width="100">
+                <div class="">
+                    <h3 class="text-danger ms-5">0%</h3>
+                    <p class=" ms-4 fs-4">Processing Errors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <h1 class="text-center ">Industry Ratings</h1>
+        <div class="row " style="padding: 8%  0 15% 0%; ">
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                <img src="./img/capterra-ratings (1).webp" alt="" class="img-fluid">
+                <p class="fs-4 fw-light">Reviews voted as the value-for-money billing solution</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                <img src="./img/software-suggest-ratings.webp" alt="" class="img-fluid">
+                <p class="fs-4 fw-light">Releated as the most user-friendly restaurant POS </p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                <img src="./img/google-ratings.webp" alt="" class="img-fluid">
+                <p class="fs-4 fw-light">Restauteurs rated us the most recommended POS provider</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- form start  -->
+
+    <div class="container">
+        <h1 class="mb-3  text-danger">Schedule a free demo</h1>
+        <h3 class="fw-light">Get in touch with our team to clarify your queries</h3>
+        <div class="row">
+            <div class="col-lg-6  col-sm-12">
+                <form class="row g-3">
+                    <div class="col-md-12 col-sm-12">
+                        <label for="Name" class="form-label fs-5">Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control p-2 rounded-pill " id="Name" placeholder="">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="inputEmail4" class="form-label fs-5">Email <span
+                                class="text-danger">*</span></label>
+                        <input type="email" class="form-control p-2 rounded-pill" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="Phono" class="form-label fs-5">Phono <span class="text-danger">*</span></label>
+                        <input type="password" class="form-control p-2 rounded-pill" id="Phono">
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                        <label for="City" class="form-label fs-5">City <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control p-2 rounded-pill " id="City" placeholder="">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="Restaurant Name" class="form-label fs-5">Restaurant Name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control p-2 rounded-pill" id="Restaurant Name" placeholder="">
+                    </div>
+                    <div class="col-md-6  col-sm-12">
+                        <label for="Restaurant Status" class="form-label fs-5">Restaurant Status <span
+                                class="text-danger">*</span></label>
+                        <!-- <input type="text" class="form-control p-2 rounded-pill" id="Restaurant Status" placeholder=""> -->
+                        <select id="Restaurant Status" class="form-select rounded-pill">
+                            <option>
+                                <selected>Please select
+                            </option>
+                            <option>Establised</option>
+                            <option>Newly Opened</option>
+                            <option>Opening Soon</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="PleaseSelect" class="form-label">Outlet Types <span
+                                class="text-danger">*</span></label>
+                        <select id="PleaseSelect" class="form-select rounded-pill p-2 ">
+                            <option selected>Please Select</option>
+                            <option>Fine Dine</option>
+                            <option>Cafe</option>
+                            <option>QSR</option>
+                            <option>cloudkitchen</option>
+                            <option>Food Court</option>
+                            <option>Large Chain</option>
+                            <option>Bakery</option>
+                            <option>Ice cream & Desserts </option>
+                            <option>Bar & Brawery </option>
+                            <option>Pizzeria</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-12 text-end p-3">
+                        <button type="submit" class="btn btn-danger px-4 fs-3">Sign in</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 text-center ps-4 ">
+                <img src="./img/scheduale-form_md.webp" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- form end -->
+
+    <div class="container-fluid" style="margin: 8% 0%; ">
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row d-flex  justify-content-between mb-5">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <h3 class="mb-4 text-danger ">POS</h3>
+                <div class="h">
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Billing</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Inventory</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Reporting</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Online Ordering</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">CRM</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-5">Menu</a></p>
+                </div>
+                <button type="button" class="btn btn-dark mt-4 fs-6 px-3">Take a Free Demo</button>
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 ">
+                <h3 class="mb-4 text-danger">Add-ons</h3>
+                <div class="h">
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Marketplace</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Payroll</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Suppliers Hub</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Marketing Hub</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Integrations</a></p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <h3 class="mb-4 text-danger">Outlet types</h3>
+                <div class="h">
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Fine Dine</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Cafe</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Food Court</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Cloud Kitchen</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Ice Cream</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Bakery</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Bsr & Brawery</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Pizzeria</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Large Chains</a></p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 ">
+                <h3 class="mb-4 text-danger">Resources</h3>
+                <div class="h">
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Pricing</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Blog</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Careers</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Support</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">About Us</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Reseller</a></p>
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2">Media</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-10 col-sm-12  mb-4">
+                <h3 class="mb-4 text-danger">Prayosha Food Services Private Limited</h3>
+                <div class="h">
+                    <p><a href="#" class="text-decoration-none text-dark fs-5 mb-2 text-wrap">8th Floor, 81,
+                            Titanium,
+                            Corporate Road,
+                            Prahladnagar, Ahmedabad, Gujarat, 380015</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row " style="margin: 10% 0%;">
+            <div class="col-lg-2 col-md-12 col-sm-12"><img src="./img/logo.svg" alt="" class="img-fluid " height="170"
+                    width="170"></div>
+            <div class="col-lg-2 col-md-12 col-sm-12 fs-4 mt-4 h ">
+                <i class="fa-brands fa-whatsapp "></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 fs-5 mt-4">
+                <p class=""> <i class="fa-solid fa-phone text-danger"></i> +919104369797</p>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 fs-5 mt-4">
+                <p style="font-size: px;"> <i class="fa-solid fa-envelope text-danger"></i> inquiry@petpooja.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center fs-5 mb-5">
+            <p>COPYRIGHT © 2024 - Prayosha Food Services Pvt. Ltd., India • Privacy • Terms • Cancellation & Refund
+                •
+                Corporate Information </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
